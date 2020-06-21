@@ -9,6 +9,7 @@ else
 fi
 echo "Checking and installing system dependencies"
 brew install autoconf automake cmake libtool pkgconfig
+brew upgrade autoconf automake cmake libtool pkgconfig
 
 cd ..
 mkdir sysroot
@@ -26,7 +27,8 @@ cd ..
 
 if [ ! -e libzmq ]; then
     echo "Cloning libzmq"
-    git clone https://github.com/stvales/libzmq.git
+    git clone git@github.com:stvales/libzmq.git
+    git remote add zeromq git@github.com:zeromq/libzmq.git
 fi
 cd libzmq
 mkdir build
@@ -39,7 +41,8 @@ cd ..
 
 if [ ! -e czmq ]; then
     echo "Cloning czmq"
-    git clone https://github.com/stvales/czmq.git
+    git clone git@github.com:stvales/czmq.git
+    git remote add zeromq git@github.com:zeromq/czmq.git
 fi
 cd czmq
 mkdir build
@@ -57,7 +60,8 @@ cd ..
 
 if [ ! -e zyre ]; then
     echo "Cloning zyre"
-    git clone https://github.com/stvales/zyre.git
+    git clone git@github.com:stvales/zyre.git
+    git remote add zeromq git@github.com:zeromq/zyre.git
 fi
 cd zyre
 mkdir build
