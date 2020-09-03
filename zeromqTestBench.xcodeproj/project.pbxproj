@@ -6,6 +6,27 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		97A50DF324E1A1FB004FC927 /* broker.c in Sources */ = {isa = PBXBuildFile; fileRef = 97A50DE524E1A0B8004FC927 /* broker.c */; };
+		97A50DF524E1A20D004FC927 /* libczmq.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 97F4595E249FB41B00C180F0 /* libczmq.a */; };
+		97A50DF624E1A20D004FC927 /* libsodium.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 97F4599F249FB43E00C180F0 /* libsodium.a */; };
+		97A50DF724E1A20D004FC927 /* libzmq.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 97F4584D249FB40800C180F0 /* libzmq.a */; };
+		97A50DF824E1A20D004FC927 /* libzyre.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 97F45994249FB43000C180F0 /* libzyre.a */; };
+		97A50DFA24E1A215004FC927 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 97A50DF924E1A215004FC927 /* libc++.tbd */; };
+		97A50E0924E1A6F4004FC927 /* peer1.c in Sources */ = {isa = PBXBuildFile; fileRef = 97A50DE624E1A0D0004FC927 /* peer1.c */; };
+		97A50E0A24E1A6FD004FC927 /* libczmq.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 97F4595E249FB41B00C180F0 /* libczmq.a */; };
+		97A50E0B24E1A6FD004FC927 /* libsodium.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 97F4599F249FB43E00C180F0 /* libsodium.a */; };
+		97A50E0C24E1A6FD004FC927 /* libzmq.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 97F4584D249FB40800C180F0 /* libzmq.a */; };
+		97A50E0D24E1A6FD004FC927 /* libzyre.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 97F45994249FB43000C180F0 /* libzyre.a */; };
+		97A50E0E24E1A703004FC927 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 97A50DF924E1A215004FC927 /* libc++.tbd */; };
+		97A50E1A24E1A8C0004FC927 /* peer2.c in Sources */ = {isa = PBXBuildFile; fileRef = 97A50DE724E1A0DF004FC927 /* peer2.c */; };
+		97A50E1B24E1A8CB004FC927 /* libczmq.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 97F4595E249FB41B00C180F0 /* libczmq.a */; };
+		97A50E1C24E1A8CB004FC927 /* libsodium.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 97F4599F249FB43E00C180F0 /* libsodium.a */; };
+		97A50E1D24E1A8CB004FC927 /* libzmq.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 97F4584D249FB40800C180F0 /* libzmq.a */; };
+		97A50E1E24E1A8CB004FC927 /* libzyre.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 97F45994249FB43000C180F0 /* libzyre.a */; };
+		97A50E1F24E1A8D0004FC927 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 97A50DF924E1A215004FC927 /* libc++.tbd */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		97F4584A249FB40800C180F0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -749,13 +770,6 @@
 			remoteGlobalIDString = C6906C940F4344C5B44EB680;
 			remoteInfo = test_ws_transport;
 		};
-		97F4591E249FB40800C180F0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 97F457C4249FB40700C180F0 /* ZeroMQ.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = E0BFB0E1C2464393B1605C60;
-			remoteInfo = test_wss_transport;
-		};
 		97F45920249FB40800C180F0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 97F457C4249FB40700C180F0 /* ZeroMQ.xcodeproj */;
@@ -1010,14 +1024,110 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		97A50DEA24E1A1EC004FC927 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		97A50E0024E1A6E7004FC927 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		97A50E1124E1A89F004FC927 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		97A50DE524E1A0B8004FC927 /* broker.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = broker.c; sourceTree = "<group>"; };
+		97A50DE624E1A0D0004FC927 /* peer1.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = peer1.c; sourceTree = "<group>"; };
+		97A50DE724E1A0DF004FC927 /* peer2.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = peer2.c; sourceTree = "<group>"; };
+		97A50DEC24E1A1EC004FC927 /* broker */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = broker; sourceTree = BUILT_PRODUCTS_DIR; };
+		97A50DF924E1A215004FC927 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		97A50E0224E1A6E7004FC927 /* peer1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = peer1; sourceTree = BUILT_PRODUCTS_DIR; };
+		97A50E1324E1A89F004FC927 /* peer2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = peer2; sourceTree = BUILT_PRODUCTS_DIR; };
+		97A50E2024E28F82004FC927 /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
 		97F457C4249FB40700C180F0 /* ZeroMQ.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ZeroMQ.xcodeproj; path = ../libzmq/builds/xcode/ZeroMQ.xcodeproj; sourceTree = "<group>"; };
 		97F45942249FB41A00C180F0 /* czmq.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = czmq.xcodeproj; path = ../czmq/builds/xcode/czmq.xcodeproj; sourceTree = "<group>"; };
 		97F45969249FB43000C180F0 /* zyre.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = zyre.xcodeproj; path = ../zyre/builds/xcode/zyre.xcodeproj; sourceTree = "<group>"; };
 		97F45999249FB43E00C180F0 /* sodium.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = sodium.xcodeproj; path = ../libsodium/builds/xcode/sodium.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFrameworksBuildPhase section */
+		97A50DE924E1A1EC004FC927 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97A50DFA24E1A215004FC927 /* libc++.tbd in Frameworks */,
+				97A50DF524E1A20D004FC927 /* libczmq.a in Frameworks */,
+				97A50DF624E1A20D004FC927 /* libsodium.a in Frameworks */,
+				97A50DF724E1A20D004FC927 /* libzmq.a in Frameworks */,
+				97A50DF824E1A20D004FC927 /* libzyre.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97A50DFF24E1A6E7004FC927 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97A50E0E24E1A703004FC927 /* libc++.tbd in Frameworks */,
+				97A50E0A24E1A6FD004FC927 /* libczmq.a in Frameworks */,
+				97A50E0B24E1A6FD004FC927 /* libsodium.a in Frameworks */,
+				97A50E0C24E1A6FD004FC927 /* libzmq.a in Frameworks */,
+				97A50E0D24E1A6FD004FC927 /* libzyre.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97A50E1024E1A89F004FC927 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97A50E1F24E1A8D0004FC927 /* libc++.tbd in Frameworks */,
+				97A50E1B24E1A8CB004FC927 /* libczmq.a in Frameworks */,
+				97A50E1C24E1A8CB004FC927 /* libsodium.a in Frameworks */,
+				97A50E1D24E1A8CB004FC927 /* libzmq.a in Frameworks */,
+				97A50E1E24E1A8CB004FC927 /* libzyre.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
 /* Begin PBXGroup section */
+		97A50D3124E19FEF004FC927 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				97A50DE524E1A0B8004FC927 /* broker.c */,
+				97A50DE624E1A0D0004FC927 /* peer1.c */,
+				97A50DE724E1A0DF004FC927 /* peer2.c */,
+				97A50E2024E28F82004FC927 /* config.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		97A50DF424E1A20D004FC927 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				97A50DF924E1A215004FC927 /* libc++.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		97F457B1249FB3CD00C180F0 = {
 			isa = PBXGroup;
 			children = (
@@ -1025,13 +1135,18 @@
 				97F457C4249FB40700C180F0 /* ZeroMQ.xcodeproj */,
 				97F45942249FB41A00C180F0 /* czmq.xcodeproj */,
 				97F45969249FB43000C180F0 /* zyre.xcodeproj */,
+				97A50D3124E19FEF004FC927 /* src */,
 				97F457BB249FB3CE00C180F0 /* Products */,
+				97A50DF424E1A20D004FC927 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		97F457BB249FB3CE00C180F0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				97A50DEC24E1A1EC004FC927 /* broker */,
+				97A50E0224E1A6E7004FC927 /* peer1 */,
+				97A50E1324E1A89F004FC927 /* peer2 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1145,7 +1260,6 @@
 				97F45919249FB40800C180F0 /* test_unbind_wildcard */,
 				97F4591B249FB40800C180F0 /* test_use_fd */,
 				97F4591D249FB40800C180F0 /* test_ws_transport */,
-				97F4591F249FB40800C180F0 /* test_wss_transport */,
 				97F45921249FB40800C180F0 /* test_xpub_manual */,
 				97F45923249FB40800C180F0 /* test_xpub_manual_last_value */,
 				97F45925249FB40800C180F0 /* test_xpub_nodrop */,
@@ -1209,12 +1323,77 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXNativeTarget section */
+		97A50DEB24E1A1EC004FC927 /* broker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97A50DF024E1A1EC004FC927 /* Build configuration list for PBXNativeTarget "broker" */;
+			buildPhases = (
+				97A50DE824E1A1EC004FC927 /* Sources */,
+				97A50DE924E1A1EC004FC927 /* Frameworks */,
+				97A50DEA24E1A1EC004FC927 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = broker;
+			productName = broker;
+			productReference = 97A50DEC24E1A1EC004FC927 /* broker */;
+			productType = "com.apple.product-type.tool";
+		};
+		97A50E0124E1A6E7004FC927 /* peer1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97A50E0624E1A6E7004FC927 /* Build configuration list for PBXNativeTarget "peer1" */;
+			buildPhases = (
+				97A50DFE24E1A6E7004FC927 /* Sources */,
+				97A50DFF24E1A6E7004FC927 /* Frameworks */,
+				97A50E0024E1A6E7004FC927 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = peer1;
+			productName = peer1;
+			productReference = 97A50E0224E1A6E7004FC927 /* peer1 */;
+			productType = "com.apple.product-type.tool";
+		};
+		97A50E1224E1A89F004FC927 /* peer2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97A50E1724E1A89F004FC927 /* Build configuration list for PBXNativeTarget "peer2" */;
+			buildPhases = (
+				97A50E0F24E1A89F004FC927 /* Sources */,
+				97A50E1024E1A89F004FC927 /* Frameworks */,
+				97A50E1124E1A89F004FC927 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = peer2;
+			productName = peer2;
+			productReference = 97A50E1324E1A89F004FC927 /* peer2 */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
 /* Begin PBXProject section */
 		97F457B2249FB3CD00C180F0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = "Ingenuity i/o";
+				TargetAttributes = {
+					97A50DEB24E1A1EC004FC927 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					97A50E0124E1A6E7004FC927 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					97A50E1224E1A89F004FC927 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+				};
 			};
 			buildConfigurationList = 97F457B5249FB3CD00C180F0 /* Build configuration list for PBXProject "zeromqTestBench" */;
 			compatibilityVersion = "Xcode 9.3";
@@ -1247,6 +1426,9 @@
 			);
 			projectRoot = "";
 			targets = (
+				97A50DEB24E1A1EC004FC927 /* broker */,
+				97A50E0124E1A6E7004FC927 /* peer1 */,
+				97A50E1224E1A89F004FC927 /* peer2 */,
 			);
 		};
 /* End PBXProject section */
@@ -1995,13 +2177,6 @@
 			remoteRef = 97F4591C249FB40800C180F0 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		97F4591F249FB40800C180F0 /* test_wss_transport */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.executable";
-			path = test_wss_transport;
-			remoteRef = 97F4591E249FB40800C180F0 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		97F45921249FB40800C180F0 /* test_xpub_manual */ = {
 			isa = PBXReferenceProxy;
 			fileType = "compiled.mach-o.executable";
@@ -2258,7 +2433,100 @@
 		};
 /* End PBXReferenceProxy section */
 
+/* Begin PBXSourcesBuildPhase section */
+		97A50DE824E1A1EC004FC927 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97A50DF324E1A1FB004FC927 /* broker.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97A50DFE24E1A6E7004FC927 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97A50E0924E1A6F4004FC927 /* peer1.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97A50E0F24E1A89F004FC927 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97A50E1A24E1A8C0004FC927 /* peer2.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
 /* Begin XCBuildConfiguration section */
+		97A50DF124E1A1EC004FC927 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 56DRT9MG9S;
+				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = $HOME/code/github/sysroot/usr/local/include;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		97A50DF224E1A1EC004FC927 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 56DRT9MG9S;
+				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = $HOME/code/github/sysroot/usr/local/include;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		97A50E0724E1A6E7004FC927 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 56DRT9MG9S;
+				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = $HOME/code/github/sysroot/usr/local/include;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		97A50E0824E1A6E7004FC927 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 56DRT9MG9S;
+				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = $HOME/code/github/sysroot/usr/local/include;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		97A50E1824E1A89F004FC927 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 56DRT9MG9S;
+				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = $HOME/code/github/sysroot/usr/local/include;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		97A50E1924E1A89F004FC927 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 56DRT9MG9S;
+				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = $HOME/code/github/sysroot/usr/local/include;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		97F457BF249FB3CE00C180F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -2371,6 +2639,33 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		97A50DF024E1A1EC004FC927 /* Build configuration list for PBXNativeTarget "broker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97A50DF124E1A1EC004FC927 /* Debug */,
+				97A50DF224E1A1EC004FC927 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97A50E0624E1A6E7004FC927 /* Build configuration list for PBXNativeTarget "peer1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97A50E0724E1A6E7004FC927 /* Debug */,
+				97A50E0824E1A6E7004FC927 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97A50E1724E1A89F004FC927 /* Build configuration list for PBXNativeTarget "peer2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97A50E1824E1A89F004FC927 /* Debug */,
+				97A50E1924E1A89F004FC927 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		97F457B5249FB3CD00C180F0 /* Build configuration list for PBXProject "zeromqTestBench" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -32,11 +32,11 @@ if [ ! -e libzmq ]; then
 fi
 cd libzmq
 mkdir build
-cmake -S . -B build -DCMAKE_BUILD_TYPE=Debug -DWITH_LIBSODIUM=ON -DENABLE_DRAFTS=ON -DCMAKE_PREFIX_PATH=$WORKPATH/sysroot/usr/local/
+cmake -S . -B build -DCMAKE_BUILD_TYPE=Debug -DWITH_LIBSODIUM=ON -DENABLE_DRAFTS=ON -DWITH_TLS=OFF -DCMAKE_PREFIX_PATH=$WORKPATH/sysroot/usr/local/
 make -j8 -C build DESTDIR=$WORKPATH/sysroot/ install
 rm -Rf build
 mkdir -p builds/xcode
-cmake -S . -B builds/xcode -DCMAKE_BUILD_TYPE=Debug -DWITH_LIBSODIUM=ON -DENABLE_DRAFTS=ON -DCMAKE_PREFIX_PATH=$WORKPATH/sysroot/usr/local/ -G "Xcode"
+cmake -S . -B builds/xcode -DCMAKE_BUILD_TYPE=Debug -DWITH_LIBSODIUM=ON -DENABLE_DRAFTS=ON -DWITH_TLS=OFF -DCMAKE_PREFIX_PATH=$WORKPATH/sysroot/usr/local/ -G "Xcode"
 cd ..
 
 if [ ! -e czmq ]; then
