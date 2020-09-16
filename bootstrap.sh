@@ -51,7 +51,7 @@ make -j8 -C build DESTDIR=$WORKPATH/sysroot/ install
 mkdir -p builds/xcode
 cmake -S . -B builds/xcode -DCMAKE_BUILD_TYPE=Debug -DENABLE_DRAFTS=ON -DCMAKE_PREFIX_PATH=$WORKPATH/sysroot/usr/local/ -G "Xcode"
 #Hack to enable xcode project embedding
-#because scripts acommpanying the xcode project do not manage
+#because scripts accompanying the xcode project do not manage
 #target folder properly:
 mkdir -p builds/xcode/Debug
 cp build/libczmq.?.?.?.dylib builds/xcode/Debug
@@ -70,7 +70,7 @@ make -j8 -C build DESTDIR=$WORKPATH/sysroot/ install
 mkdir -p builds/xcode
 cmake -S . -B builds/xcode -DCMAKE_BUILD_TYPE=Debug -DENABLE_DRAFTS=ON -DCMAKE_PREFIX_PATH=$WORKPATH/sysroot/usr/local/ -G "Xcode"
 #Hack to enable xcode project embedding
-#because scripts acommpanying the xcode project do not manage
+#because scripts accompanying the xcode project do not manage
 #target folder properly:
 mkdir -p builds/xcode/Debug
 cp build/libzyre.?.?.?.dylib builds/xcode/Debug
